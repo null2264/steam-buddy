@@ -1,0 +1,6 @@
+#! /bin/bash
+
+rm -f ~/.local/share/steam-buddy/content/sb-gc/dolphin-emu/Sys
+mkdir -p ~/.local/share/steam-buddy/content/sb-gc/dolphin-emu
+ln -s /usr/share/dolphin-emu/sys ~/.local/share/steam-buddy/content/sb-gc/dolphin-emu/Sys
+/usr/share/steam-buddy/bin/launcher sb-gc dolphin "$@"
